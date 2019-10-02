@@ -1,3 +1,7 @@
+# OSM Ireland Tasking Manager
+
+Fork of HOT Tasking Manager for OSM Ireland purposes
+
 # Tasking Manager
 
 The Tasking Manager is the tool for any organised OpenStreetMap editing and coordination.
