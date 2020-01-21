@@ -3,23 +3,49 @@
         <header class="section__header">
             <div class="inner">
                 <h1 class="section__title">
-                    {{ 'About the Tasking Manager' | translate }}
+                    {{ 'About #osmIRL_buildings' | translate }}
                 </h1>
                 <p>
-                    {{ "The Tasking Manager is a mapping tool designed and built for the Humanitarian OpenStreetMap Team's collaborative mapping process in OpenStreetMap. The purpose of the tool is to divide up a mapping project into smaller tasks that can be completed rapidly with many people working on the same overall area. It shows which areas need to be mapped and which areas need the mapping validated." | translate }}
+                    {{ "This is a campaign designed by #osmIRL or OpenStreetMap Ireland CLG, which is the chapter organization for the OpenStreetMap Community in Ireland. The background to the campaign is based on a discussion at the 2019 AGM in Dublin where the community asked the chapter organization to devise a shared project that would allow the community connect together again and share a mission like we did successfully with the townlands project. The additional criteria were set which were that the mission should have a low bar of complexity for new members, and that it should also address a major missing feature on the map on both sides of the border. The board members worked on this for several months and opted for  #osmIRL_buildings because:" | translate }}
                 </p>
+                <ul>
+                    <li>Only about 20% of Ireland’s buildings were mapped at the end of 2019</li>
+                    <li>Mapping buildings is a relatively straightforward task, as observed with hotosm activiations in the developing world</li>
+                    <li>A more detailed buildings set is scalable, can be extracted in clusters to infer landuses, can support more complete addressing efforts, can be used to detect unspotted roadways, can be used to make a more complete range of street-level commercial services</li>
+                </ul>
+                
                 <p>
-                    {{ 'This approach allows the distribution of tasks to many individual mappers in the context of emergency or other humanitarian mapping scenario. It also allows monitoring of the overall project progress and helps improve the consistency of the mapping (e.g., elements to cover, specific tags to use, etc.).' | translate }}
-                </p>
-                <p>
-                    {{'All of this work is done through'| translate }} <a href="https://www.openstreetmap.org/" target="_top">OpenStreetMap</a>. {{'OpenStreetMap is the community-driven free and editable map of the world, supported by the not-for-profit '| translate }} <a
-                        href="http://wiki.osmfoundation.org/wiki/Main_Page" target="_top">{{'OpenStreetMap Foundation'| translate }}</a>. {{'Read more on the'| translate }} <a href="https://wiki.openstreetmap.org/wiki/Main_Page">{{'OSM Wiki'| translate }}</a> {{' or join the discussion with your '| translate }} <a
-                        href="http://wiki.openstreetmap.org/wiki/Mailing_lists#Country-Specific_Lists">{{'local OSM community'| translate }}</a>.
+                    Other osm communities have spotted the importance of mapping buildings as a lever to complete their map. 
+                    Examples of these are communities are 
+                    <a href="https://osm-austria-building-coverage.thomaskonrad.at/">Austria</a> and 
+                    <a href="https://wiki.openstreetmap.org/wiki/Canada/Building_Canada_2020">Canada</a>. 
+                    These example campaigns have several years of a head-start on #osmIRL_buildings, and the osm communities in those countries 
+                    have visible benefits of a larger mapper participation base about 4 to 5 times that for Ireland, as well as a more complete map, 
+                    and a plurality of mapping projects assisted by the building traces.
                 </p>
             </div>
         </header>
         <div class="section-container">
             <div class="section__body section__body--secondary">
+                <div class="inner">
+                    <h2>Interactions</h2>
+
+                    <p>
+                        OpenStreetMap in Ireland will organize mapathons and meetups to assist contributors to the #osmIRL_buildings campaign. 
+                        All mappers will follow the osmf recommended 
+                        <a href="https://wiki.openstreetmap.org/wiki/Community_Code_of_Conduct_(Draft)">code of conduct</a> 
+                        without exception.
+                    </p>
+                    <p>
+                        telegram group is in operation which will be used to have common issues discussions about matters that face all mappers, 
+                        but individual feedback will not be done in public, instead the hotosm task manager is the sole place to discuss mistakes 
+                        or misunderstandings about specific changesets and contributions.
+                    </p>
+                    <p>
+                        Occasionally the campaign may ne mentioned on other for a, the message board, IRC, twitter and facebook, but active contributors are asked to keep their dicussions in telegram and their feedback on the task manager tool.
+                    </p>
+                </div>
+
                 <div class="inner">
                     <h2>{{ 'Contact Information' | translate }}</h2>
                     <p>
@@ -31,48 +57,24 @@
                         <a href="mailto:info@hotosm.org" target="_top">info@hotosm.org</a>
                     </p>
                 </div>
-                <div class="inner">
-                    <h2>{{ 'Sponsorship and Funding' | translate }}</h2>
-                    <p>
-                        {{ 'The Tasking Manager was designed and built for the' | translate }}
-                        <a href="https://hotosm.org" target="_blank" rel="noopener">{{'Humanitarian OpenStreetMap Team.'| translate }}</a>
-                    </p>
-                    <p>
-                        {{ 'With the invaluable support of:' | translate }}
-                        <div class="sponsor__cards">
-                            <div class="sponsor__card"
-                                 ng-repeat="sponsor in aboutCtrl.sponsors">
-                                <section class="panel sponsor__content">
-                                    <div ng-show="sponsor.logo" class="supporters-logo">
-                                        <span class="helper"></span>
-                                        <a href="{{ sponsor.url }}" target="_blank" rel="noopener">
-                                            <img src="{{ sponsor.logo }}"
-                                                 alt="{{ sponsor.name }} + logo">
-                                        </a>
-                                    </div>
-                                    <span>{{ sponsor.name }}</span>
-                                </section>
-                            </div>
-                            <div class="sponsor__card sponsor__card--become">
-                                <section class="panel sponsor__content">
-                                    <p>{{ 'Want to become a sponsor? Contact us to learn how.' | translate }}</p>
-                                    <a href="mailto:info@hotosm.org" target="_top">{{ 'Contact Us' | translate }}</a>
-                                </section>
-                            </div>
-                        </div>
-                    </p>
-                </div>
             </div>
         </div>
         <div class="section-container">
             <div class="section__body">
                 <div class="inner">
-                    <h2>{{ 'Open Source' | translate }}</h2>
+                    <h2>Acknowledgements</h2>
                     <p>
-                        {{ 'The Tasking Manager is Open Source software. Please feel free to report issues and contribute.' | translate }}
+                        The tasking manager for #osmIRL_buildings is a fork of the <a href="https://github.com/hotosm/tasking-manager">HOTOSM tasking manager</a> which is opensourced on github.
+                    </p>
+                        
+                    <p>
+                        Supreme and sincere thanks to hotosm and its sponsors and funders for having the generosity to allow us to set up our own iteration.
                     </p>
                     <p>
-                        <a href="https://github.com/hotosm/tasking-manager" target="_blank" rel="noopener">{{ 'The application code is available on GitHub.' | translate }}</a>
+                        The tasking manager for #osmIRL_buildings is Open Source software. Please feel free to report issues and contribute.
+                    </p>
+                    <p>
+                        <a href="https://github.com/rustyb/osm-ireland-tasking-manager" target="_blank" rel="noopener">{{ 'The application code is available on GitHub.' | translate }}</a>
                     </p>
                 </div>
             </div>
